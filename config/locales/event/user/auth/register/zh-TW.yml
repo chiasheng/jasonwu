@@ -1,0 +1,7 @@
+zh-TW:
+  event:
+    user:
+      auth:
+        register:
+          email: "嗨, %{name}, 這是註冊 email"
+          sms: "嗨, %{name}, 這是註冊 sms"

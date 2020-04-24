@@ -1,0 +1,8 @@
+zh-TW:
+  event:
+    teacher:
+      appointment:
+        booked:
+          email: '[email] Hi, %{name}, %{student_name} 在 %{start_at} 預約您的課程'
+          apple: '[apple] Hi, %{name}, %{student_name} 在 %{start_at} 預約您的課程'
+          telegram: '[telegram] Hi, %{name}, %{student_name} 在 %{start_at} 預約您的課程'

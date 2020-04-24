@@ -1,0 +1,7 @@
+en:
+  event:
+    user:
+      auth:
+        register:
+          email: 'Hi, #{name}, here is register email'
+          sms: 'Hi, #{name}, here is register sms'

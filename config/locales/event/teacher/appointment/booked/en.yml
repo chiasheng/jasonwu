@@ -1,0 +1,8 @@
+en:
+  event:
+    teacher:
+      appointment:
+        booked:
+          email: '[email] Hi, %{name}, %{student_name} book your appointment at %{start_at}'
+          apple: '[apple] Hi, %{name}, %{student_name} book your appointment at %{start_at}'
+          telegram: '[telegram] Hi, %{name}, %{student_name} book your appointment at %{start_at}'

@@ -1,0 +1,5 @@
+.byebug_history
+/tmp
+/log
+!/log/.keep
+db/*.sqlite3
