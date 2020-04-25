@@ -32,15 +32,6 @@ class Event::Base
 
   private
 
-  def locale
-    @current_user.locale
-  end
-
-  def via_apple
-    # send to apple process ...
-    print_mock_message(:apple)
-  end
-
   def via_telegram
     # send to telegram process ...
     print_mock_message(:telegram)
@@ -57,7 +48,7 @@ class Event::Base
   end
 
   def translate(type)
-    I18n.t("#{translate_key}.#{type}", **@i18n, locale: locale)
+    I18n.t("#{translate_key}.#{type}", **@i18n, locale: @current_user.locale)
   end
 
   def translate_key
@@ -65,6 +56,6 @@ class Event::Base
   end
 
   def print_mock_message(type, device = nil)
-    p "[#{type}][#{device || @current_user.send(type)}] #{translate(type)}"
+    puts("[#{type}][#{device || @current_user.send(type)}] #{translate(type)}")
   end
 end

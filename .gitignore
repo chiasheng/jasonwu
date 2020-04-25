@@ -2,4 +2,3 @@
 /tmp
 /log
 !/log/.keep
-db/*.sqlite3

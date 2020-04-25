@@ -17,32 +17,14 @@ class ApplicationController < ActionController::Base
   private
 
   def current_user
-    @current_user ||= User.find_or_create_by(
-      email: 'john@email.com',
-      name: 'John Doe',
-      phone: '0912345678',
-      apple: 'apple_device_id',
-      telegram: 'telegram_id',
-      locale: 'zh-TW'
-    )
+    @current_user ||= User.find_by(email: 'john@email.com')
   end
 
   def mock_appointment
-    Appointment.find_or_create_by(
-      user: current_suer,
-      teacher: mock_teacher_user,
-      start: '2045-01-01'.to_time
-    )
+    @mock_appointment ||= Appointment.first
   end
 
   def mock_teacher_user
-    @mock_teacher_user ||= User.find_or_create_by(
-      email: 'jane@email.com',
-      name: 'Jane Doe',
-      phone: '0987654321',
-      apple: 'apple_device_id',
-      telegram: 'telegram_id',
-      locale: 'en'
-    )
+    @mock_teacher_user ||= User.find_by(email: 'jane@email.com')
   end
 end

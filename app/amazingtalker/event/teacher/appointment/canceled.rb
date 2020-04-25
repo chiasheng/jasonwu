@@ -2,7 +2,7 @@ class Event::Teacher::Appointment::Canceled < Event::Base
   param :appointment
 
   def channels
-    [:email, :apple, :telegram]
+    [:email, :telegram]
   end
 
   def i18n

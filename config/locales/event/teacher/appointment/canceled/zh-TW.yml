@@ -4,5 +4,4 @@ zh-TW:
       appointment:
         canceled:
           email: '[email] Hi, %{name}, %{student_name} 在 %{start_at} 取消您的課程'
-          apple: '[apple] Hi, %{name}, %{student_name} 在 %{start_at} 取消您的課程'
           telegram: '[telegram] Hi, %{name}, %{student_name} 在 %{start_at} 取消您的課程'
